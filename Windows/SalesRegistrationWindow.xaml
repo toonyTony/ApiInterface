@@ -1,0 +1,49 @@
+﻿<Window x:Class="ApiInterface.Windows.SalesRegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ApiInterface.Windows"
+        mc:Ignorable="d"
+        Title="SalesRegistrationWindow" Height="616" Width="875">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Введите имя:"/>
+            <TextBox x:Name="DishName" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label Content="Введите вес:"/>
+            <TextBox x:Name="DishCode" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label Content="Введите общую стоимость:"/>
+            <TextBox x:Name="TotalCost" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <Label Content="Введите кол-во проданных товаров:"/>
+            <TextBox x:Name="QuantitySold" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4">
+            <Label Content="Выберите дату продажи:"/>
+            <DatePicker x:Name="SaleDate" Height="40" Margin="50 10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5">
+            <Label Content="Выберите посуду:"/>
+            <ComboBox x:Name="cbPrice" Height="40"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,75,0,10" Grid.RowSpan="2">
+            <Button Content="OK" Margin="10 30" Width="100" Click="Button_Click"/>
+            <Button Content="Cancel" Margin="10 30" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
